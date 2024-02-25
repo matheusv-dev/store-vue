@@ -1,12 +1,12 @@
 
 <template>
-  <div class="flex flex-col gap-5 py-3">
+  <div class="flex flex-col gap-5 py-3 max-w-screen-x">
     <div class="flex gap-3 items-center">
       <v-icon name="fa-boxes" scale="2" />
       <h1 class="text-2xl"> Produtos</h1>
     </div>
     <div class="">
-      <DataTable :value="products" stripedRows tableStyle="min-width: 50rem" class="rounded-lg p-5 bg-gray-800">
+      <DataTable :value="products" stripedRows tableStyle="min-width: 50rem" class="rounded-lg p-5 bg-neutral-700 max-w-full">
         <Column header="Imagem" field="image">
           <template #body="item">
             <img :src="`${item.data.image}`" :alt="item.data.image" class="border-round rounded" style="width: 64px" />
@@ -35,10 +35,7 @@ export default {
     };
   },
   mounted() {
-    ProductService.getProducts().then((data) => {
-      console.log(data)
-      return this.products = data
-    });
+    ProductService.getProducts().then((data) => this.products = data );
   },
   methods: {
     formatCurrency(value) {

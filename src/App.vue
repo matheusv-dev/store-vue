@@ -15,7 +15,7 @@
         to="/graph">Gráfico</router-link>
     </nav>
   </header>
-  <div class="max-w-screen-xl mx-auto">
+  <div class="mx-auto w-full max-w-screen-xl  false">
     <router-view />
   </div>
 </template>

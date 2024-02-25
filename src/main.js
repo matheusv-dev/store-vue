@@ -8,9 +8,9 @@ import DataTable from "primevue/datatable";
 import Lara from "./presets/lara";
 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { FaFlag, FaBoxes, RiZhihuFill } from "oh-vue-icons/icons";
+import { FaFlag, FaBoxes, RiZhihuFill, FaStar, BiGraphDownArrow, RiMoneyDollarBoxFill, FaLayerGroup  } from "oh-vue-icons/icons";
 
-addIcons(FaFlag, RiZhihuFill, FaBoxes);
+addIcons(FaFlag, RiZhihuFill, FaBoxes, FaStar, BiGraphDownArrow, RiMoneyDollarBoxFill, FaLayerGroup );
 
 const vueApp = createApp(App).use(router).use(PrimeVue, { unstyled: true, pt: Lara });
 
