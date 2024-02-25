@@ -12,10 +12,10 @@
         to="/summary">Resumo</router-link>
       <router-link
         class=" cursor-pointer rounded-xl px-2 py-1 transition-all duration-300 ease-in-out hover:bg-purple-600 hover:text-white  hover:opacity-90 sm:px-3"
-        to="/graph">Gráfico</router-link>
+        to="/sold">Vendas</router-link>
     </nav>
   </header>
-  <div class="mx-auto w-full max-w-screen-xl  false">
+  <div class="mx-auto w-full max-w-screen-xl dark">
     <router-view />
   </div>
 </template>
