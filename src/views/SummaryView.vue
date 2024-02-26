@@ -51,7 +51,6 @@ export default {
     ProductService.getProductsMostRating().then((data) => {
       this.mostRatedProduct.product = data.product
       this.mostRatedProduct.rating = data.rating
-
     });
     ProductService.getProductLowestRate().then((data) => {
       this.lowestRatedProduct.product = data.product

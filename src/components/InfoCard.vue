@@ -27,6 +27,5 @@ export default {
     iconColor: String,
     cardTitle: String,
   },
-
 }
 </script>

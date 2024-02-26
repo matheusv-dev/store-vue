@@ -6,7 +6,7 @@
       <h1 class="text-2xl"> Produtos</h1>
     </div>
     <div class="">
-      <DataTable :value="products" stripedRows tableStyle="min-width: 50rem" class="rounded-lg p-5 bg-neutral-700 max-w-full">
+      <DataTable :value="products" stripedRows class="rounded-lg overflow-hidden max-w-full">
         <Column header="Imagem" field="image">
           <template #body="item">
             <img :src="`${item.data.image}`" :alt="item.data.image" class="border-round rounded" style="width: 64px" />

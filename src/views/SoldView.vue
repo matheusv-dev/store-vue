@@ -23,7 +23,7 @@ export default {
   },
   components: { Cart },
   mounted() {
-    SoldService.getListSoldCarts().then((data) => this.carts = data);
+    SoldService.getListSoldFull().then((data) => this.carts = data);
   },
 
 };

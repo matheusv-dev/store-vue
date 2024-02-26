@@ -47,9 +47,10 @@ export default {
     },
     formatData(value) {
       if (value) {
-        const date = new Date(value);
-        console.log();
-        return date.toLocaleString('pt-BR');
+        const date = value.split("T");
+        const dates = date[0].split("-");
+
+        return `${dates[2]}/${dates[1]}/${dates[0]}`;
       }
       return;
     }

@@ -28,8 +28,5 @@ export default {
     iconColor: String,
     cardTitle: String,
   },
-  setup(props) {
-    console.log(props)
-  }
 }
 </script>

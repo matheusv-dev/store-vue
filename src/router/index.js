@@ -30,6 +30,8 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  linkActiveClass: "bg-purple-700",
+  linkExactActiveClass: "bg-purple-700",
 });
 
 export default router;

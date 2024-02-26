@@ -19,10 +19,11 @@ import {
   BiGraphDownArrow,
   RiMoneyDollarBoxFill,
   FaLayerGroup,
-  FaCartArrowDown ,
+  FaCartArrowDown,
+  RiFolderChartFill,
 } from "oh-vue-icons/icons";
 
-addIcons(FaFlag, RiZhihuFill, FaBoxes, FaStar, BiGraphDownArrow, RiMoneyDollarBoxFill, FaLayerGroup, FaCartArrowDown );
+addIcons(FaFlag, RiZhihuFill, FaBoxes, FaStar, BiGraphDownArrow, RiMoneyDollarBoxFill, FaLayerGroup, FaCartArrowDown, RiFolderChartFill);
 
 const vueApp = createApp(App).use(router).use(PrimeVue, { unstyled: true, pt: Lara });
 
